@@ -1,0 +1,245 @@
+:root {
+	/* font */
+	--header-font-family: 'Roboto', sans-serif;
+	--body-font-family: 'sans-serif';
+
+	/* color */
+	--red-color: #e50914;
+	--black-color: #000000;
+	--white-color: #ffffff;
+	--detail-blue-color: #448ef4;
+	--save-blue-color: #0071eb;
+	--faq-gray-color: #2d2d2d;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: var(--black-color);
+}
+
+/*시작*/
+
+/* Header */
+header {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header .logo {
+	margin-right: 396.2px;
+	margin-left: 0;
+	margin-top: 15px;
+}
+
+header .logo button {
+	width: 110px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	background-image: url(image/Netflix_Logo_PMS\ \(1\).png);
+	background-size: cover;
+	background-color: transparent;
+}
+
+header .language {
+	display: flex;
+	width: auto;
+	height: 32px;
+	margin: 0 0.25rem;
+	font-size: 1rem;
+	padding: 1px 6px;
+	align-items: center;
+	border: 1px solid var(--faq-gray-color);
+	border-radius: 0.25rem;
+}
+
+header .language i {
+	color: var(--white-color);
+	padding-right: 0;
+}
+
+header .language .langSelect .language {
+	appearance: none;
+	background: transparent;
+	color: var(--white-color);
+	border: 0 solid transparent;
+}
+
+header .language .moreBtn {
+	padding-left: 6px;
+	background-color: transparent;
+	font-size: 10px;
+	border: none;
+}
+
+header .login {
+	margin-right: 32px;
+	margin-left: 5px;
+	border: 1px solid var(--red-color);
+	border-radius: 0.25rem;
+	background-color: var(--red-color);
+	padding: 4px 16px;
+}
+
+header .login a {
+	color: var(--white-color);
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* background */
+section {
+	background: url(image/backgroundimg.jpg);
+	color: var(--white-color);
+}
+
+.background {
+	content: '';
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+	background: rgb(0 0 0 / 40%);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* body - email */
+.emailInfo {
+	margin-top: 100px;
+	margin-left: 70px;
+	margin-right: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.emailInfo h1 {
+	font-size: 2rem;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.5em;
+	position: relative;
+}
+
+.emailInfo p {
+	font-size: 1.125rem;
+	margin-block-end: 1em;
+	font-weight: 400;
+	position: relative;
+}
+
+.emailInfo form {
+	display: flex;
+	flex-direction: column;
+}
+
+.emailInfo h3 {
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.6875rem;
+	margin-block-end: 1em;
+	position: relative;
+}
+
+.emailInfo form .emailBnk {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.emailBnk label {
+	position: absolute;
+	font-size: 1rem;
+	top: 24rem;
+	left: 5.5rem;
+}
+
+.emailBnk input {
+	width: 410px;
+	height: 56px;
+	background: transparent;
+	border: 1px solid gray;
+	border-radius: 0.25rem;
+	background: rgba(22, 22, 22, 0.7);
+	cursor: text;
+	color: var(--white-color);
+}
+
+.emailBnk button {
+	margin-left: 0.5rem;
+	width: 168px;
+	height: 56px;
+	background-color: var(--red-color);
+	border: 0px solid var(--red-color);
+	border-radius: 0.25rem;
+	color: var(--white-color);
+	font-size: 1.5rem;
+	position: relative;
+	cursor: pointer;
+}
+
+/* body - standard */
+.standardAd {
+	display: flex;
+	margin: 0 74px;
+	margin-top: 100px;
+	position: relative;
+	justify-content: center;
+	background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+	box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+	padding: 22px;
+	border-radius: 4px;
+}
+
+.standardAd .popcornimg img {
+	width: 96px;
+	height: 100px;
+}
+
+.standardAd .standardInfo {
+	padding-left: 32px;
+}
+
+.standardAd .standardInfo .price {
+	font-size: 20px;
+	line-height: 30px;
+	margin-block-end: 0.2em;
+}
+
+.standardAd .standardInfo .join {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+
+.standardAd .standardInfo button {
+	cursor: pointer;
+	color: var(--detail-blue-color);
+	background: none;
+	font-size: 16px;
+	text-decoration: underline;
+	border: none;
+}
+
+.standardAd .standardInfo button i {
+	margin-left: 15px;
+	
+}
+
+
+
+
+#email{
+	padding-left: 1rem;
+}
+#email::placeholder{
+	font-size: 24px;
+	margin-left: 15px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix 클론코딩</title>
+    <script src="https://kit.fontawesome.com/4094a82e8e.js" 
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <section> 
+    <div class="background">
+        <header>
+                <div class="logo">
+                    <button class="logoBtn" onclick="location.href='https://www.netflix.com/kr/'"></button>
+                </div>
+                
+                <div class="language">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="langSelect">
+                        <select class="language">
+                            <option select lang="ko">한국어</option>
+                            <option select lang="en">English</option>
+                        </select>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="login">
+                <a role="button" href="https://www.netflix.com/kr/login">로그인</a>
+                </div>
+        </header>
+        <main>
+            <div class="emailInfo">
+                <h1>영화, 시리즈 등을 무제한으로</h1>
+                <p>다양한 디바이스에서 시청하세요.
+                    언제든 해지하실 수 있습니다.
+                </p>
+                <form >
+                    <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나
+                    재시작하려면 이메일 주소를 입력하세요.
+                    </h3>
+                    
+                    <div class="emailBnk">
+                        <!-- <label for="em" id="label">이메일 주소</label> -->
+                        <div class="input"0>
+                            <input type="text" placeholder="email url" onclick="hide()" id=email>
+                        </div>
+                        <button class="startBtn">시작하기 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="standardAd">
+                <div class="popcornimg">
+                    <img src="image/popcorn.png" alt="">
+                </div>
+                <div class="standardInfo">
+                    <p class="price">5,500원이면 만날 수 있는 넷플릭스.</p>
+                    <p class="join">광고형 스탠다드 멤버십에 가입하세요.</p>
+                    <button onclick="location.href='https://www.netflix.com/signup'">자세히 알아보기   
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
